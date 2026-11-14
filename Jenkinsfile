@@ -4,7 +4,7 @@ agent any{
 stages{
 
   //git connection  
-stage(Git connection Test){
+stage('Git connection Test'){
     steps{
         Git branch: 'main',
         credentialsID: 'testing-ID',
