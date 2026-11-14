@@ -33,7 +33,7 @@ stage('latest commit'){
 stage('git check required file'){
     steps{
         sh 'ls -la'
-        sh 'test -f indexfile'
+        sh 'test -f index.html'
         sh 'test -f Dockerfile'
         echo "Git check file successful"
     }
