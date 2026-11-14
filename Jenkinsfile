@@ -23,6 +23,38 @@ stage('git show all file'){
     }
 }
 
+stage('latest commit'){
+    steps{
+        checkout scm
+        echo "checkout file successful"
+    }
+}
+
+stage('git check required file'){
+    steps{
+        sh 'ls -la'
+        sh 'test -f indexfile'
+        sh 'test -f Dockerfile'
+        echo "Git check file successful"
+    }
+}
+
+//Docker image creation
+stage('Docker image creation'){
+    steps{
+        sh 'docker build -t testing:latest .'
+        echo "Docker image creation successful"
+    }
+}
+
+//docker container creation
+stage('docker container creation'){
+    steps{
+        sh 'docker rm -f testing || true'
+        sh 'docker run -d --name testing --restart  unless-stopped -p 80:80 testing:latest'
+        echo "container deployment successful"
+    }
+}
 }
 
 }
