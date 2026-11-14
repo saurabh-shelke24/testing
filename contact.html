@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | NexaCloud</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <div class="ambient-glow-1"></div>
+  <div class="ambient-glow-2"></div>
+
+  <!-- Navigation Bar -->
+  <header>
+    <div class="nav-container">
+      <a href="index.html" class="logo">
+        <div class="logo-icon"><i class="fa-solid fa-cloud-bolt"></i></div>
+        <span class="logo-text">NexaCloud</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+      <a href="contact.html" class="nav-cta">Get Started</a>
+    </div>
+  </header>
+
+  <!-- Contact Section -->
+  <section class="container" style="padding-top: 5rem; max-width: 800px;">
+    <div class="section-header">
+      <div class="metric-badge"><i class="fa-solid fa-envelope"></i> Get In Touch</div>
+      <h2>Let's Build Something Amazing</h2>
+      <p>Have questions about cloud deployment or CI/CD pipelines? Drop us a message below.</p>
+    </div>
+
+    <div class="card" style="padding: 3rem;">
+      <form id="contactForm" style="display: flex; flex-direction: column; gap: 1.5rem;">
+        <div>
+          <label style="display: block; font-size: 0.85rem; font-family: monospace; text-transform: uppercase; color: var(--text-muted); margin-bottom: 0.5rem;">Your Name</label>
+          <input type="text" id="name" required placeholder="e.g. Alex Morgan" style="width: 100%; padding: 0.85rem 1rem; background: rgba(2, 6, 23, 0.8); border: 1px solid var(--border-color); border-radius: 12px; color: #fff; font-size: 0.95rem; outline: none;">
+        </div>
+
+        <div>
+          <label style="display: block; font-size: 0.85rem; font-family: monospace; text-transform: uppercase; color: var(--text-muted); margin-bottom: 0.5rem;">Email Address</label>
+          <input type="email" id="email" required placeholder="alex@cloudops.io" style="width: 100%; padding: 0.85rem 1rem; background: rgba(2, 6, 23, 0.8); border: 1px solid var(--border-color); border-radius: 12px; color: #fff; font-size: 0.95rem; outline: none;">
+        </div>
+
+        <div>
+          <label style="display: block; font-size: 0.85rem; font-family: monospace; text-transform: uppercase; color: var(--text-muted); margin-bottom: 0.5rem;">Message</label>
+          <textarea id="message" rows="4" required placeholder="Tell us about your project or inquiry..." style="width: 100%; padding: 0.85rem 1rem; background: rgba(2, 6, 23, 0.8); border: 1px solid var(--border-color); border-radius: 12px; color: #fff; font-size: 0.95rem; outline: none; resize: none;"></textarea>
+        </div>
+
+        <button type="submit" class="btn-primary" style="justify-content: center; width: 100%; cursor: pointer; border: none;">
+          Send Message <i class="fa-solid fa-paper-plane"></i>
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="logo" style="justify-content: center; margin-bottom: 1rem;">
+      <div class="logo-icon" style="width: 32px; height: 32px; font-size: 0.9rem;"><i class="fa-solid fa-cloud-bolt"></i></div>
+      <span class="logo-text" style="font-size: 1.1rem;">NexaCloud</span>
+    </div>
+    <p>&copy; 2026 NexaCloud Infrastructure. Built for high-performance CI/CD deployments.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
