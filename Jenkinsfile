@@ -19,7 +19,7 @@ stage('Git connection Test'){
 stage('git show all file'){
     steps{
       sh 'ls -la'
-      echo "all file shows succesfully"
+      echo "all file are showened succefully"
     }
 }
 
